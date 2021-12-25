@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+  background-color: #0d192b;
+  color: white;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: 'Outfit';
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.card {
+  background-color: #14253d;
+  height: 600px;
+  width: 350px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 18px;
+}
+
+.card .main-image {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.card .main-image img {
+  background-repeat: no-repeat;
+  background-size: 320px;
+  width: 320px;
+  height: 320px;
+  border-radius: 10px;
+}
+
+.card .main-image div {
+  position: absolute;
+  top: 15px;
+  background-color: rgba(0, 255, 247, 0.476);
+  width: 92%;
+  height: 95%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card .main-image div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card .main-image div:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.card .text-container {
+  margin-top: 15px;
+  margin-left: 23px;
+  margin-right: 12px;
+}
+
+.card .text-container .crypto-id {
+  cursor: pointer;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  color: white;
+  font-family: 'Outfit';
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card .text-container .crypto-id:hover {
+  color: var(--cyan);
+}
+
+.card .text-container .crypto-desc {
+  color: rgba(139, 172, 218, 0.714);
+  font-family: 'Outfit';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.card .text-container .crypto-eth {
+  margin-top: 20px;
+}
+
+.card .text-container .crypto-eth .ethereum-icon {
+  width: 9px;
+  height: auto;
+}
+
+.card .text-container .crypto-eth .val {
+  padding-left: 2px;
+  font-family: 'Outfit';
+  color: var(--cyan);
+}
+
+.card .text-container .crypto-eth .clock-icon {
+  padding-left: 115px;
+  width: 20px;
+  height: auto;
+}
+
+.card .text-container .crypto-eth .time {
+  color: #8bacda;
+  font-family: 'Outfit';
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card .text-container hr {
+  margin-top: 25px;
+  border: none;
+  height: 0.1px;
+  color: #8bacda;
+  background-color: #8bacda;
+}
+
+.card .text-container .credit img {
+  float: left;
+  margin-top: 15px;
+  width: 30px;
+  height: auto;
+  border: 1px solid #fff;
+  border-radius: 100px;
+}
+
+.card .text-container .credit .credit-text {
+  float: right;
+  margin-top: 22px;
+  padding-right: 100px;
+  font-family: 'Outfit';
+  font-size: 15px;
+  font-weight: 400;
+  color: #8bacda;
+}
+
+.card .text-container .credit .credit-text .credit-user {
+  color: rgba(255, 255, 255, 0.836);
+  cursor: pointer;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.card .text-container .credit .credit-text .credit-user:hover {
+  color: var(--cyan);
+}
+/*# sourceMappingURL=styles.css.map */
